@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siete y Media</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>SIETE Y MEDIA</h1>
+
+      <div class="turno-display">
+        <p class="texto-puntuacion">Tu puntuación:</p>
+        <button class="numero-turno" id="puntuacion"></button>
+      </div>
+      <div class="tapete">
+        <div class="barajaBocaAbajo" style="position: relative">
+          <div style="position: absolute; left: 0px; z-index: 0">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA01"
+            />
+          </div>
+          <div style="position: absolute; left: 5px; z-index: 1">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA02"
+            />
+          </div>
+          <div style="position: absolute; left: 10px; z-index: 2">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA03"
+            />
+          </div>
+          <div style="position: absolute; left: 15px; z-index: 3">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA04"
+            />
+          </div>
+          <div style="position: absolute; left: 20px; z-index: 4">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA05"
+            />
+          </div>
+          <div style="position: absolute; left: 25px; z-index: 5">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA06"
+            />
+          </div>
+          <div style="position: absolute; left: 30px; z-index: 6">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA07"
+            />
+          </div>
+          <div style="position: absolute; left: 35px; z-index: 7">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA08"
+            />
+          </div>
+          <div style="position: absolute; left: 40px; z-index: 8">
+            <img
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              id="cartaBA09"
+            />
+          </div>
+        </div>
+        <div class="cartaInicio" style="position: relative">
+          <div style="position: absolute; z-index: 0">
+            <img
+              id="cartaInicio"
+              src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg"
+              title="Carta de Inicio"
+            />
+          </div>
+        </div>
+        <div class="cartasJuego" style="position: relative">
+          <div style="position: absolute; left: 40px; z-index: 11">
+            <img id="cartaJuego01" src="" />
+          </div>
+          <div style="position: absolute; left: 80px; z-index: 12">
+            <img id="cartaJuego02" src="" />
+          </div>
+          <div style="position: absolute; left: 120px; z-index: 13">
+            <img id="cartaJuego03" src="" />
+          </div>
+          <div style="position: absolute; left: 160px; z-index: 14">
+            <img id="cartaJuego04" src="" />
+          </div>
+          <div style="position: absolute; left: 200px; z-index: 15">
+            <img id="cartaJuego05" src="" />
+          </div>
+          <div style="position: absolute; left: 240px; z-index: 16">
+            <img id="cartaJuego06" src="" />
+          </div>
+          <div style="position: absolute; left: 280px; z-index: 17">
+            <img id="cartaJuego07" src="" />
+          </div>
+          <div style="position: absolute; left: 320px; z-index: 18">
+            <img id="cartaJuego08" src="" />
+          </div>
+          <div style="position: absolute; left: 360px; z-index: 19">
+            <img id="cartaJuego09" src="" />
+          </div>
+        </div>
+      </div>
+      <div class="turno-display">
+        <button id="inicioJuego">INICIO</button>
+        <button id="pedirCarta" disabled="true">CARTA</button>
+        <button id="plantarse" disabled="true">PLANTARSE</button>
+        <button id="comprobar" disabled="true">COMPROBAR</button>
+        <button id="reset">NUEVA PARTIDA</button>
+      </div>
+      <div class="turno-display">
+        <p class="texto-puntuacion" id="mensaje"></p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
